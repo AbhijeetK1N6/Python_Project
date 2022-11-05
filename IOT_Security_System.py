@@ -13,11 +13,11 @@ def TryingEntry():
     #    to = "+15556667777",    # Replace with the number you want to text
     #    from_ ="+15558675309")  # Replace with your Twilio number
     #    Note that the parameter is named `from_`, not `from`
-    message = client.messages.create(to = "+919026579148", 
+    message = client.messages.create(to = "+91TargetPhoneNuber", 
         from_ = "+17472987031",
         body = "####--IMPORTANT--####\nSomeone is trying to enter in the XYZ Area, Time to be Alert!")
 
-aadhar_data={"5675":"abhijeetk1n6s@gmail.com","0930":"krisssssac@gmail.com"}
+aadhar_data={"5675":"abc@gmail.com","0930":"xyz@gmail.com"}     #Target Emails(linked with aadhar) to get the OTP
 ip_aadhar=input("Enter Last Four Digits of your Aadhar Number:-")
 if ip_aadhar in aadhar_data:
     ip_email=input("Enter the Email Linked with your Aadhar:-")
@@ -30,7 +30,7 @@ if ip_aadhar in aadhar_data:
         msg= otp
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
-        s.login("skashvi029@gmail.com", "uitkkqpgmyhwglau")
+        s.login("pqrs@gmail.com", "uitkkqpgmyhwglau")   #Source email to send the OTP
         #emailid = input("Enter your email: ")
         s.sendmail('&&&&&&&&&&&',ip_email,msg)
         a = input("Enter Your OTP >>: ")
